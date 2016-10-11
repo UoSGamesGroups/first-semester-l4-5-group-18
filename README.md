@@ -1,9 +1,9 @@
 # Group Project L4/5 Group 18
 
-Zachari Cooper, Level 5 Designer
-Daniel Jamieson, Level 5 Programmer
-Thomas Turner, Level 4 Designer
-Amy Potter, Level 4 Designer
+Zachari Cooper, Level 5 Designer  
+Daniel Jamieson, Level 5 Programmer  
+Thomas Turner, Level 4 Designer  
+Amy Potter, Level 4 Designer  
 
 
 This is the repository for your group project, keep it neat and well organised with sensible folder structures.
