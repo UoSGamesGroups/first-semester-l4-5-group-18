@@ -6,6 +6,7 @@ public class ItemControl : MonoBehaviour {
     public CharacterControl Char;
     public LighteningControl Light;
     public TalkControl Talk;
+    public WalkScript Animal;
     public int MyItemNumber;
 
     void OnMouseUpAsButton()
@@ -15,9 +16,15 @@ public class ItemControl : MonoBehaviour {
             Char.Characters[Char.CurrentCharacter, 0] = 1;
             Findtarget();
             StopCoroutine(Light.Timer());
+
             StartCoroutine(Light.Timer());
+
             Char.NewCharacter();
             Talk.Talking = false;
+
+
+
+
             Destroy(gameObject);
         }
 
@@ -30,8 +37,8 @@ public class ItemControl : MonoBehaviour {
         if (hit.collider.gameObject.tag == "Animal")
             {
                 Animal = hit.collider.gameObject.GetComponent<WalkScript>();//Animal.Run(); <- returns game object, not script. need get component?? add function thata makes animal run away, then send in a new animal.
-                Animal.posX = -11.05f;
-            gameObject.tag = "Untagged";
+            Animal.Steering = true;
+            Animal.test = Char.CurrentCharacter;
             }
     }
 

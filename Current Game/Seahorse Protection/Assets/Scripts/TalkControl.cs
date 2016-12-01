@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TalkControl : MonoBehaviour {
     public GUISkin theSkin;
-    public Vector2 TextPos = new Vector2(300, Screen.height);
+    public Vector2 TextPos = new Vector2(Screen.width/2 -50, Screen.height-100);
     public string[,] Speach = new string[15, 3];
 
 
