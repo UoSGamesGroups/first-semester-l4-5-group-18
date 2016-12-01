@@ -7,13 +7,15 @@ public class TalkControl : MonoBehaviour {
     public string[,] Speach = new string[15, 3];
 
 
-    public int Item, Next = 0;
+    public int Item =0, Next = 0;
     public bool Talking = false;
     public CharacterControl Char;
     public Barcontrol Comfort;
     public int SwitchValue;
+    public LighteningControl Light;
 
     void Start() {
+        Light = GetComponent<LighteningControl>();
         Speach[0, 0] = "Not everyone has one";
         Speach[0, 1] = "I used to be in a band";
         Speach[0, 2] = "It has a long neck";
