@@ -62,7 +62,7 @@ public class WalkScript : MonoBehaviour {
                 gameObject.tag = "Untagged";
                 
                 Debug.Log("Test = " + test);
-                switch (test)
+                switch (test+1)
                 {
                     case 1:
                         posX = -8.2f;
